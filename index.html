@@ -19,8 +19,30 @@
             <div class="box">
                 <a href="index.html"><img src="img/Index/logo1.png" alt="logo"></a>
                 <a class="logo2" href="index.html"><img src="img/Index/logo2.png" alt="logo"></a>
-                <div class="search">
-                    <button class="header__btn"> Browse</button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" data-easy-toggle="#dropdown" data-easy-class="show"
+                        data-easy-rcoe>Browse</button>
+                    <div id="dropdown" class="dropdown-menu">
+                        <span class="dropdown-menu-title"><strong>WOMEN</strong></span>
+                        <hr class="hr">
+                        <a href="#" class="dropdown-link">Dresses</a>
+                        <a href="#" class="dropdown-link">Tops</a>
+                        <a href="#" class="dropdown-link">Sweaters/Knits</a>
+                        <a href="#" class="dropdown-link">Jackets/Coats</a>
+                        <a href="#" class="dropdown-link">Blazers</a>
+                        <a href="#" class="dropdown-link">Denim</a>
+                        <a href="#" class="dropdown-link">Leggings/Pants</a>
+                        <a href="#" class="dropdown-link">Skirts/Shorts</a>
+                        <a href="#" class="dropdown-link">Accessories</a>
+                        <span class="dropdown-menu-title"><strong>MEN</strong></span>
+                        <hr class="hr">
+                        <a href="#" class="dropdown-link">Tees/Tank tops</a>
+                        <a href="#" class="dropdown-link">Shirts/Polos</a>
+                        <a href="#" class="dropdown-link">Sweaters</a>
+                        <a href="#" class="dropdown-link">Sweatshirts/Hoodies</a>
+                        <a href="#" class="dropdown-link">Blazers</a>
+                        <a href="#" class="dropdown-link">Jackets/vests</a>
+                    </div>
                     <input class="search__field" type="text" placeholder="Search for item...">
                 </div>
             </div>
@@ -182,6 +204,9 @@
             <div class="container"></div>
         </div>
         <script src="https://use.fontawesome.com/a82c47f20e.js"></script>
+        <script>
+            !function () { "use strict"; document.addEventListener("click", function (t) { const e = t.target.closest("[data-easy-toggle]"); if (e) { t.preventDefault(); let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); try { document.querySelectorAll("[data-easy-toggle]").forEach(t => { t.hasAttribute("data-easy-parallel") || t === e || document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class")) }), document.querySelector(a).classList.toggle(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } } if (!e) { let e = document.querySelectorAll("[data-easy-rcoe]"); Array.from(e).forEach.call(e, function (e) { let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); if (!t.target.closest(a)) try { document.querySelector(a).classList.remove(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } }) } }) }();
+        </script>
 </body>
 
 </html>
