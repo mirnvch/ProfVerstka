@@ -1,12 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-/*----Переменные----*/
-/*----Проект----*/
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -52,7 +49,6 @@
   margin-left: 37px;
 }
 
-/*----Выпадающая кнопка и список в Header----*/
 .dropdown {
   margin-left: 37px;
   position: relative;
@@ -286,9 +282,6 @@
   letter-spacing: normal;
   line-height: 54px;
   text-align: center;
-  /* Text style for "Fetured It" */
-  font-style: normal;
-  letter-spacing: 0.75px;
   padding-top: 120px;
 }
 
@@ -302,7 +295,7 @@
   letter-spacing: normal;
   line-height: 54px;
   text-align: center;
-  padding-top: 56px;
+  padding-top: 38px;
 }
 
 .card__box {
@@ -424,16 +417,174 @@
   letter-spacing: normal;
   line-height: 54px;
   text-align: center;
-  /* Text style for "B, rowse A" */
-  font-style: normal;
-  letter-spacing: 0.4px;
-  line-height: normal;
   text-decoration: none;
-  padding: 18px 19px;
 }
 
 .cont__btn:hover {
-  background-color: forestgreen;
+  background-color: #99434f;
   color: gold;
+}
+
+.container-promo {
+  height: 529px;
+  background: #222224;
+  margin-top: 113px;
+  background-image: url(img/Index/promoimg.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  position: relative;
+}
+
+.sales-text {
+  position: absolute;
+  top: 146px;
+  left: 39px;
+  width: 323px;
+  height: 78px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sales-text .sale {
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+
+.sales-text .saleText {
+  color: #f16d7f;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+
+.sales-text .saleText_2 {
+  font-size: 32px;
+  font-style: normal;
+  letter-spacing: 0.9px;
+  line-height: normal;
+}
+
+.promo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 43px;
+}
+
+.icon {
+  padding-top: 48px;
+}
+
+.promo-text {
+  padding-left: 33px;
+  padding-top: 55px;
+}
+
+.mainText {
+  width: 219px;
+  height: 20px;
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.promo {
+  width: 219px;
+  height: 58px;
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer {
+  height: 975px;
+  padding-top: 97px;
+}
+
+.footer_info {
+  height: 430px;
+  background-image: url(img/Index/Footer_img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  opacity: 0.6;
+  background-color: rgba(38, 45, 49, 0.6);
+}
+
+.footer_info::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 1px;
+  height: 438px;
+  background-color: #ffffff;
+}
+
+.left_footer_info {
+  opacity: 1;
+  padding-left: 243px;
+  padding-top: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_info_text {
+  width: 406px;
+  height: 68px;
+  color: #222224;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 28px;
+}
+
+.footer_info_text2 {
+  padding-left: 353px;
+  height: 27px;
+  color: #f16d7f;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Lato - Bold';
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  line-height: 0.9em;
+}
+
+.footer_info_text2 .footer_info_text3 {
+  height: 27px;
+  color: #222224;
+  font-family: 'Lato Light';
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  line-height: 14px;
 }
 /*# sourceMappingURL=style.css.map */
