@@ -1,9 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
-
+// Обнуление
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
 }
+  
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+:focus, :active {
+    outline: none;
+}
+  
+a:focus, a:active {
+    outline: none;
+}
+  
+nav, footer, header, aside {
+    display: block;
+}
+  
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+  
+input, button, textarea {
+    font-family: inherit;
+}
+  
+input::-ms-clear {
+    display: none;
+}
+  
+button {
+    cursor: pointer;
+}
+  
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+  
+a, a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+ul li {
+    list-style: none;
+}
+  
+img {
+    vertical-align: top;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+  
+// ------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 //----Переменные----
 $ff:'Lato', sans-serif;
@@ -156,6 +226,8 @@ $ff:'Lato', sans-serif;
     background-color: #fff;
     color: #f16d7f;
     font-weight: 600;
+    border: 1px solid #e6e6e6
+
 }
 
 
@@ -181,13 +253,21 @@ $ff:'Lato', sans-serif;
     color: #222222;
 }
 
+.menu__link {
+    color: #222222;
+}
+
+.menu__link:hover {
+    color: red;
+}
+
 .sub__header {
     height: 665px;
     background-color: #e8e8e8;
 }
 
 .header__img {
-    background: url(img/Index/banner.png) 100% 100% no-repeat;
+    background: url(../img/Index/banner.png) 100% 100% no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,36 +301,59 @@ $ff:'Lato', sans-serif;
     color: #f16d7f;
 }
 
-.card__fist {
-    padding-top: 98px;
-    display: grid;
-    grid-template-columns: repeat(2, 560px);
-    grid-template-rows: repeat(3, 261px);
-    justify-content: center;
-    
-}
+.content {
+    & a {
+        text-decoration: none;
+    }
+    &__fist {
+        display: flex;
+        margin: 48px 0 0 0;
+        justify-content: space-between;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
 
-.first__card {
-    grid-column: 1 / 2;
-    grid-row: 1 / 1;
-}
-
-.second__card {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-    padding-left: 21px;
-}
-.third__card {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    padding-left: 21px;
-    padding-top: 20px;
-}
-
-.forth__card {
-    grid-column: 1 / 2;
-    grid-row: 3 / 3;
-    padding-top: 40px;
+    &__title {
+        display: flex;
+        margin: 0 0 20px 0;
+        width: 560px;
+        &:last-child {
+            margin: 0;
+        }
+        &_1 {
+            background: url('../img/Index/man.png') 0 0 no-repeat;
+            height: 542px;
+        }
+        &_2 {
+            background: url('../img/Index/ACCESORIES.png') 0 0 no-repeat;
+            height: 261px;
+        }
+        &_3 {
+            background: url('../img/Index/women.png') 0 0 no-repeat;
+            height: 261px;
+        }
+        &_4 {
+            background: url('../img/Index/for_kids.png') 0 0 no-repeat;
+            height: 542px;
+        }
+    }
+    &__label {
+        max-height: 82px;
+        margin: 26px 0 0 0;
+        background-color: #fff;
+        padding: 16px 20px;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+        span {
+            font-size: 30px;
+            color: #f16d7f;
+        }
+    }
 }
 
 .text__1 {
@@ -393,7 +496,7 @@ $ff:'Lato', sans-serif;
     height: 529px;
     background: #222224;
     margin-top: 113px;
-    background-image: url(img/Index/promoimg.png);
+    background-image: url(../img/Index/promoimg.png);
     background-repeat: no-repeat;
     background-size: 70%;
     position: relative;
@@ -433,9 +536,6 @@ $ff:'Lato', sans-serif;
         line-height: normal;
     }
 }
-
-
-
 
 .promo-icon {
     display: flex;
@@ -486,9 +586,8 @@ $ff:'Lato', sans-serif;
 }
 
 .footer_info {
-    height: 420px;
-    background-image: url(img/Index/Footer_img.png);
-    background-repeat: no-repeat;
+    height: 518px;
+    background: url(../img/Index/Footer_img.png) 0 0 no-repeat;
     background-size: 100%;
     position: relative;
     opacity: 1;
@@ -501,7 +600,7 @@ $ff:'Lato', sans-serif;
     left: 50%;
     content: '';
     width: 1px;
-    height: 438px;
+    height: 518px;
     background-color: #ffffff;
 }
 
@@ -715,4 +814,7 @@ $ff:'Lato', sans-serif;
 .social a:hover {
     background: #f16d7f;
     color: #f7f7f8;
+    display: inline-block;
+    border-radius: 0;
+    box-shadow: 1px 4px 0 #e6e6e6 inset, -1px -4px 0 #e6e6e6 inset;
 }
