@@ -83,7 +83,7 @@ $ff:'Lato', sans-serif;
 //----Прижате footer к нижней части----
 
 .wrapper {
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -100,7 +100,7 @@ $ff:'Lato', sans-serif;
 }
 
 .top {
-    flex-grow: 1;
+    flex: 1 1 auto;
 }
 
 .header { 
@@ -140,16 +140,16 @@ summary {
 }
 
 summary::after {
-    content: '\25B6';
+    content: '\25BC';
     padding-right: 0.5em;
     color: #838383;
     margin-left: 10px;
 }
 
-details[open] > summary::after {
-    content: '\25BC';
-    margin-left: 7px;
-}
+// details[open] > summary::after {
+//     content: '\25BC';
+//     margin-left: 7px;
+// }
 
 .dropdown {
     margin-left: 37px;
@@ -487,7 +487,6 @@ details[open] > summary::after {
 .card__box {
     background: white;
     padding: 0 0 20px;
-    text-align: center;
     font-size: 14px;
     font-family: $ff;
     text-transform: uppercase;
@@ -506,70 +505,145 @@ details[open] > summary::after {
     
 }
 
-.card__box img {
-    display: block;
-    width: 100%;
+.item {
+    width: 263px;
+    position: relative;
+    margin-bottom: 40px;
+    &-link {
+        display: block;
+        width: 263px;
+    }
+    &-txt-box {
+        padding: 15px;
+    }
+    &-pic {
+        width: 100%;
+    }
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
-.product-buttons {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 80%;
-    background: rgba(0, 0, 0, .8);
-    opacity: 0;
-    transition: .3s ease-in-out;
-}
- .button {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 12px;
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 1px solid #ffffff;
-    transform: translate(-50%, -50%) scale(0);
-    transition: .3s ease-in-out;
+.txt-desc {
+    color: #222222;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
-.button:before {
-    content: "\f07a";
-    font-family: 'FontAwesome', sans-serif;
-    margin-right: 10px;
-}
-
-.product-item:hover .product-buttons {
-   opacity: 1;
-}
-.product-item:hover .button {
-   transform: translate(-50%, -50%) scale(1);
-}
-.button:hover {
-   background: #ffffff;
-   color: black;
-}
-.product-title {
-   color: #222222;
-   text-align: left;
-   padding: 20px 0;
-}
-.product-title:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-}
-
-.product-price {
-    width: 50px;
-    height: 15px;
+.txt-price {
     color: #f16d7f;
+    font-family: $ff;
     font-size: 16px;
     font-weight: 700;
-    text-align: left;
 }
+
+.item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.item:hover .item-pic {
+    filter: brightness(30%);
+}
+
+.add-box {
+    display: none;
+    position: absolute;
+    top: 98px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.add-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 7px;
+    pointer-events: all;
+}
+
+.add-txt {
+    color: #ffffff;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.item:hover .add-box{
+    display: flex;
+}
+
+.add-link:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+// .product-buttons {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 80%;
+//     background: rgba(0, 0, 0, .8);
+//     opacity: 0;
+//     transition: .3s ease-in-out;
+// }
+//  .button {
+//     text-decoration: none;
+//     color: #ffffff;
+//     font-size: 12px;
+//     width: 140px;
+//     height: 40px;
+//     line-height: 40px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     border: 1px solid #ffffff;
+//     transform: translate(-50%, -50%) scale(0);
+//     transition: .3s ease-in-out;
+// }
+
+// .button:before {
+//     content: "\f07a";
+//     font-family: 'FontAwesome', sans-serif;
+//     margin-right: 10px;
+// }
+
+// .product-item:hover .product-buttons {
+//    opacity: 1;
+// }
+// .product-item:hover .button {
+//    transform: translate(-50%, -50%) scale(1);
+// }
+// .button:hover {
+//     background: rgba(0, 0, 0, .8);
+//     color: #ffffff;
+   
+// }
+// .product-title {
+//    color: #222222;
+//    text-align: left;
+//    padding: 20px 0;
+// }
+// .product-title:hover {
+//     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+//     background-color: #ffffff;
+// }
+
+// .product-price {
+//     width: 50px;
+//     height: 15px;
+//     color: #f16d7f;
+//     font-size: 16px;
+//     font-weight: 700;
+//     text-align: left;
+// }
 
 .content__btn {
     display: flex;
@@ -933,4 +1007,89 @@ details[open] > summary::after {
     display: inline-block;
     border-radius: 0;
     box-shadow: 1px 4px 0 #e6e6e6 inset, -1px -4px 0 #e6e6e6 inset;
+}
+
+//----Single Page----
+
+.single-content {
+    background-color: #f8f3f4;
+}
+
+.single-cont {
+    &-text {
+        display: flex;
+        justify-content: space-between;
+        height: 148px;
+        align-items: center;
+    }
+    &-name {
+        width: 176px;
+        height: 18px;
+        color: #f16d7f;
+        font-family: "Lato - Black";
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-img {
+        background: url('../img/Single_page/Girl1.png') 50% 50% no-repeat;
+        display: flex;
+        height: 777px;
+    }
+    &-border {
+        height: 730px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+    }
+    &-info {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//---- Стиль списка ---
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+//---- Отображение элементов списка бок о бок ---
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+//---- Добавить символ косой черты (/) перед/за каждым элементом списка ---
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+//---- Добавить цвет для всех ссылок внутри списка ---
+ul.breadcrumb li a {
+    color: #636363;
+    text-decoration: none;
+  }
+  
+// --- Добавить цвет на наведении курсора мыши ----
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+ul.breadcrumb li:last-of-type {
+    color: #f16d7f;
+    font-family: "Lato - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.cont-img {
+    background-color: #f7f7f7
 }
