@@ -1,0 +1,230 @@
+.single-content {
+    background-color: #f8f3f4;
+}
+
+.single-cont {
+    &-text {
+        display: flex;
+        justify-content: space-between;
+        height: 148px;
+        align-items: center;
+    }
+    &-name {
+        width: 176px;
+        height: 18px;
+        color: #f16d7f;
+        font-family: "Lato - Black";
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-img {
+        background: url('../img/Single_page/Girl1.png') 50% 50% no-repeat;
+        display: flex;
+        height: 777px;
+    }
+    &-border {
+        height: 730px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+    }
+    &-info {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//---- Стиль списка ---
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+//---- Отображение элементов списка бок о бок ---
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+//---- Добавить символ косой черты (/) перед/за каждым элементом списка ---
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+  }
+  
+//---- Добавить цвет для всех ссылок внутри списка ---
+ul.breadcrumb li a {
+    color: #636363;
+    text-decoration: none;
+  }
+  
+// --- Добавить цвет на наведении курсора мыши ----
+ul.breadcrumb li a:hover {
+    color: #f16d7f;
+  }
+
+ul.breadcrumb li:last-of-type {
+    color: #f16d7f;
+    font-family: "Lato - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.single-content-pic {
+    height: 777px;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+}
+
+.single-info {
+    height: 730px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80px;
+}
+
+.info-txt {
+    color: #f16d7f;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 73px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.info-text {
+    color: #4d4d4d;
+    font-family: "Lato - Black";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+    &-txt {
+        width: 618px;
+        color: #5e5e5e;
+        font-family: $ff;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    &-st {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+    }
+    &-first {
+        color: #b9b9b9;
+        font-family: $ff;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &-second {
+        color: #2f2f2f;
+        font-family: $ff;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &-price {
+        color: #ef5b70;
+        font-family: $ff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 43px;
+    }
+    &-border {
+        width: 642px;
+        border: 1px solid #eaeaea;
+        margin-bottom: 63px;
+    }
+    &-choose {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    &-btn {
+        width: 144px;
+        height: 35px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+    }
+    &-dropdown {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-bottom: 28px;
+    }
+    &-btn {
+        color: #bcbcbc;
+        font-family: $ff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &-add {
+        width: 500px;
+        height: 55px;
+        border: 1px solid #ef5b70;
+        background-color: #fff;
+        &:hover {
+            box-shadow: 0 0 10px #ef5b70;
+        }
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+    }
+    &-add-txt {
+        color: #ef5b70;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+}
+
+.single-card {
+    &-txt {
+    align-items: center;
+    color: #4d4d4d;
+    font-family: "Lato - Black";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 119px;
+    margin-bottom: 72px;
+    }
+}
+.item-card-box {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,346 @@
+.sub__header {
+    background-color: #e8e8e8;
+    &__img {
+        background: url('../img/Index/banner.png') 100% 50% no-repeat;
+        display: flex;
+        padding: 224px 0 297px 0;
+    }
+    &__decor {
+        background-color: #f16d7f;
+        min-width: 12px;
+        margin: 0 12px 0 0;
+    }
+    &__text {
+        max-width: 589px;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: #222222;
+        margin: -8px 0 -5px 0;
+        span:first-child {
+            font-size: 60px;
+        }
+        span:last-child {
+            color: #f16d7f;
+        }
+    }    
+}
+
+.header_banner {
+    background: 100% 50% no-repeat;
+}
+
+.text__border {
+    border-left:12px solid #f16d7f;
+}
+
+.text {
+    font-family: $ff;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+    padding-left: 12px;
+    &__second {
+        font-size: 40px;
+    }
+    &__third {
+        font-size: 40px;
+        color: #f16d7f;
+    }
+}
+
+.content {
+    & a {
+        text-decoration: none;
+    }
+    &__fist {
+        display: flex;
+        margin: 48px 0 0 0;
+        justify-content: space-between;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        display: flex;
+        margin: 0 0 20px 0;
+        width: 560px;
+        &:last-child {
+            margin: 0;
+        }
+        &_1 {
+            background: url('../img/Index/man.png') 0 0 no-repeat;
+            height: 542px;
+        }
+        &_2 {
+            background: url('../img/Index/ACCESORIES.png') 0 0 no-repeat;
+            height: 261px;
+        }
+        &_3 {
+            background: url('../img/Index/women.png') 0 0 no-repeat;
+            height: 261px;
+        }
+        &_4 {
+            background: url('../img/Index/for_kids.png') 0 0 no-repeat;
+            height: 542px;
+        }
+    }
+    &__label {
+        max-height: 82px;
+        margin: 26px 0 0 0;
+        background-color: #fff;
+        padding: 16px 20px;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+        span {
+            font-size: 30px;
+            color: #f16d7f;
+        }
+    }
+}
+
+.text__1 {
+    height: 23px;
+    color: #222222;
+    font-family: $ff;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.text__2 {
+    height: 12px;
+    color: #9f9f9f;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 59px;
+}
+
+.card__box {
+    background: white;
+    padding: 0 0 20px;
+    font-size: 14px;
+    font-family: $ff;
+    text-transform: uppercase;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+    width: 263px;
+    height: 364px;
+    
+}
+
+.item {
+    width: 263px;
+    position: relative;
+    margin-bottom: 40px;
+    &-link {
+        display: block;
+        width: 263px;
+    }
+    &-txt-box {
+        padding: 15px;
+    }
+    &-pic {
+        width: 100%;
+    }
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.txt-desc {
+    color: #222222;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.txt-price {
+    color: #f16d7f;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.item:hover .item-pic {
+    filter: brightness(30%);
+}
+
+.add-box {
+    display: none;
+    position: absolute;
+    top: 98px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.add-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 7px;
+    pointer-events: all;
+}
+
+.add-txt {
+    color: #ffffff;
+    font-family: $ff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.item:hover .add-box{
+    display: flex;
+}
+
+.add-link:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.content__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.cont__btn {
+    width: 212px;
+    height: 55px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    text-align: center;
+}
+
+.cont__btn:hover {
+    background-color: #fff;
+    color: #f16d7f;
+    font-weight: 600;
+    border: 1px solid #e6e6e6
+}
+
+.container-promo {
+    height: 490px;
+    background: #222224;
+    margin-top: 113px;
+    background-image: url(../img/Index/promoimg.png);
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.sales-text {
+    position: absolute;
+    top: 146px;
+    left: 39px;
+    width: 323px;
+    height: 78px;
+    color: #ffffff;
+    font-family: $ff;
+    font-size: 54px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    .sale {
+        font-style: normal;
+        letter-spacing: 1.5px;
+        line-height: normal;
+    }
+    .saleText {
+        color: #f16d7f;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        line-height: normal;
+    }
+    .saleText_2 {
+        font-size: 32px;
+        font-style: normal;
+        letter-spacing: 0.9px;
+        line-height: normal;
+    }
+}
+
+.promo-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 43px;
+}
+
+.icon {
+    padding-top: 48px;
+}
+
+
+.promo-text {
+    padding-left: 33px;
+    padding-top: 55px;
+}
+
+.mainText {
+    width: 219px;
+    height: 20px;
+    color: #fbfbfb;
+    font-family: $ff;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.promo {
+    width: 219px;
+    height: 58px;
+    color: #fbfbfb;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+}

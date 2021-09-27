@@ -1,0 +1,248 @@
+.header { 
+    display: flex;
+    justify-content: space-between;  
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.17);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.logo2 {
+    margin-left: 13px;
+}
+
+.navbar {
+    margin-left: 37px;
+}
+
+//----Выпадающая кнопка и список в Header----
+
+summary {
+    display: block;
+    list-style-type: none;
+    width: 100px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+}
+
+summary::after {
+    content: '\25BC';
+    padding-right: 0.5em;
+    color: #838383;
+    margin-left: 10px;
+}
+
+// details[open] > summary::after {
+//     content: '\25BC';
+//     margin-left: 7px;
+// }
+
+.dropdown {
+    margin-left: 37px;
+    position: relative;
+    display: flex;
+}
+.dropdown-list {
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    display: flex;
+    z-index: 99999;
+}
+
+.right__btn {
+    justify-content: right;
+    padding-right: 26px;
+}
+
+.search_field input {
+    width: 317px;
+    height: 38px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    padding-left: 16px;
+}
+
+.search_field button {
+    width: 42px;
+    height: 38px;
+    background: #ffffff;
+    position: absolute;
+    border: 1px solid #e6e6e6;
+}
+
+.search_field button:before {
+    content: "\f002";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    color: #a4a4a4;
+}
+.dropdown__btn {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-family: $ff;
+    line-height: 2.13;
+    letter-spacing: 0.38px;
+    text-align: center;
+    color: #fff;
+}
+
+.dropdown__btn:hover {
+    background-color: #fff;
+    color: #f16d7f;
+    font-weight: 600;
+    border: 1px solid #e6e6e6
+
+}
+
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 225px;
+    padding-right: 225px;
+    
+    font-family: $ff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    position: relative;
+}
+
+.menu-link {
+    color: #222222;
+    padding: 19px 19px 22px 19px;
+}
+
+.menu-link:hover {
+    color: red;
+}
+
+.menu-list {
+    display: flex;
+    position: relative;
+}
+
+
+.mega-box {
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 55px;
+    display: none;
+}
+
+.mega-heading {
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    color: #232323;
+    font-family: $ff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.mega-link {
+    display: block;
+    font-family: $ff;
+    font-weight: 400;
+    color: #646464;  
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: normal;
+    line-height: 28px;
+    text-transform: capitalize;
+    
+}
+
+.mega-link:hover {
+    color: red;
+}
+
+.mega-item {
+    margin-right: 46px;
+    padding: 20px 0;
+    
+}
+
+.mega-item:last-of-type {
+    margin-right: 0;
+    flex-wrap: wrap;
+}
+
+.mega-box:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+
+.menu-list:hover .mega-box{
+    display: flex;
+}
+
+.mega-img {
+    width: 255px;
+    height: 118px;
+    background: url('../img/Index/Sylvester.png') 0 0 no-repeat;
+    position: relative;
+    &-text {
+        color: #ffffff;
+        font-family: "Lato - Black";
+        font-size: 22px;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: 0.55px;
+        line-height: normal;
+        margin: 61px 10px 12px 174px;
+        position: absolute;
+    }
+}
+
+.last:hover .mega-box {
+    right: 0;
+    left: auto;
+}
+
+.last:hover .mega-box:before {
+    right: 53px;
+    left: auto;
+}
