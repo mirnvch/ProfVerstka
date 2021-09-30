@@ -261,7 +261,7 @@ summary::after {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  z-index: 99999;
+  z-index: 99998;
 }
 
 .mega-box {
