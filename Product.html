@@ -417,21 +417,268 @@
                         </div>
                         <form class="filter">
                             <div class="filter-box">
-                                <ul class="filter-trend">
-                                    <p class="filter-trend-title">trending now</p>
-                                    <li class="filter-trend-link"><a href="#">Bohemian</a></li>
-                                    <li class="filter-trend-link"><a href="#">Floral</a></li>
-                                    <li class="filter-trend-link"><a href="#">Lace</a></li>
-                                    <li class="filter-trend-link"><a href="#">Floral</a></li>
-                                    <li class="filter-trend-link"><a href="#">Lace</a></li>
-                                    <li class="filter-trend-link"><a href="#">Bohemian</a></li>
-                                </ul>
-                                <div class="filter-size"></div>
-                                <div class="filter-price"></div>
+                                <fieldset class="filter-box">
+                                    <ul class="filter-trend">
+                                        <p class="filter-trend-title">trending now</p>
+                                        <li class="filter-trend-link"><a href="#">Bohemian</a></li>
+                                        <li class="filter-trend-link"><a href="#">Floral</a></li>
+                                        <li class="filter-trend-link"><a href="#">Lace</a></li>
+                                        <ul class="filter-trend second">
+                                            <li class="filter-trend-link"><a href="#">Floral</a></li>
+                                            <li class="filter-trend-link"><a href="#">Lace</a></li>
+                                            <li class="filter-trend-link"><a href="#">Bohemian</a></li>
+                                        </ul>
+                                    </ul>
+                                </fieldset>
+                                <fieldset class="filter-size">
+                                    <legend class="filter-trend-title">size</legend>
+                                    <label class="filter-size-number" for="XXS">
+                                        <input id="xxs" type="checkbox"> XXS</label>
+                                    <label class="filter-size-number" for="xs">
+                                        <input id="xs" type="checkbox"> XS</label>
+                                    <label class="filter-size-number" for="S">
+                                        <input id="S" type="checkbox"> S</label>
+                                    <label class="filter-size-number" for="M">
+                                        <input id="M" type="checkbox"> M</label>
+                                    <label class="filter-size-number" for="L">
+                                        <input id="L" type="checkbox"> L</label>
+                                    <label class="filter-size-number" for="XL">
+                                        <input id="xl" type="checkbox"> XL</label>
+                                    <label class="filter-size-number" for="XXL">
+                                        <input id="xxl" type="checkbox"> XXL</label>
+                                </fieldset>
+                                <fieldset class="filter-price">
+                                    <label class="filter-trend-title" for="range">price</label>
+                                    <input class="filter-price-input" id="range" type="range" value="10" step="0.1">
+                                    <br>
+                                    <p class="filter-trend-title">$
+                                        <output name="result" for="range">0</output>
+                                    </p>
+                                </fieldset>
                             </div>
-                            <div class="filte-sort"></div>
-                            <div class="filter-card-box"></div>
+                            <div class="filter-sort">
+                                <div class="filter-sort-by">
+                                    <label class="filter-sort-by-name">Sort By</label>
+                                    <select class="filter-sort-by-name" id="sort">
+                                        <option value="name">Name</option>
+                                    </select>
+                                </div>
+                                <div class="filter-sort-by">
+                                    <label class="filter-sort-by-name">Show</label>
+                                    <select class="filter-sort-by-name" id="sort">
+                                        <option value="name">09</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <section class="card__box">
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango  People  T-shirt1.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt2.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt4.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt4.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt5.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt6.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt7.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt8.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-box">
+                                    <div class="item">
+                                        <a class="item-link" href="#"><img class="item-pic"
+                                                src="img/Index/Mango__People__T-shirt8.png" alt="photo">
+                                            <div class="item-txt-box">
+                                                <p class="txt-desc">MANGO PEOPLE T-SHIRT</p>
+                                                <p class="txt-price">$52.00</p>
+                                            </div>
+                                        </a>
+                                        <div class="add-box">
+                                            <a class="add-link" href="#">
+                                                <img class="add-pic" src="img/Index/cart1.svg" alt="cart">
+                                                <p class="add-txt">Add To Cart</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="filter-pagination">
+                                <div class="filter-pagination-box">
+                                    <a href="#">&lt;</a>
+                                    <a class="active" href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">....</a>
+                                    <a href="#">20</a>
+                                    <a class="active" href="#">&gt;</a>
+                                </div>
+                                <button class="filter-btn">View All</button>
+                            </div>
                         </form>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <div class="bottom-content">
+                            <div class="bottom-content-icon">
+                                <i><img class="bottom-content-icon-img" src="img/Index/Car.svg" alt="icon"></i>
+                                <h6 class="bottom-content-par">Free Delivery</h6>
+                                <p class="bottom-content-text">Worldwide delivery on all. Authorit tively morph
+                                    next-generation
+                                    innov
+                                    tion
+                                    with extensive
+                                    models.</p>
+                            </div>
+                            <div class="bottom-content-icon">
+                                <i><img class="bottom-content-icon-img" src="img/Index/Percent.svg" alt="icon"></i>
+                                <h5 class="bottom-content-par">Sales & discounts</h5>
+                                <p class="bottom-content-text">Worldwide delivery on all. Authorit tively morph
+                                    next-generation
+                                    innov
+                                    tion
+                                    with
+                                    extensive
+                                    models.</p>
+                            </div>
+                            <div class="bottom-content-icon">
+                                <i><img class="bottom-content-icon-img" src="img/Index/Crown.svg" alt="icon"></i>
+                                <h5 class="bottom-content-par">Quality assurance</h5>
+                                <p class="bottom-content-text">Worldwide delivery on all. Authorit tively morph
+                                    next-generation
+                                    innov
+                                    tion
+                                    with
+                                    extensive
+                                    models.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

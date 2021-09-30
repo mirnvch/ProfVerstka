@@ -1,7 +1,5 @@
 .footer {
     height: 975px;
-    padding-top: 97px;
-
 }
 
 .footer_info {
@@ -19,7 +17,7 @@
     left: 50%;
     content: '';
     width: 1px;
-    height: 518px;
+    height: 100%;
     background-color: #ffffff;
 }
 
@@ -134,7 +132,15 @@
     background-color: #f16d7f;
     margin-top: 30px;
     position: absolute;
-    
+    color: #ffffff;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_btn:hover {
+    background-color: #ffffff;
+    color: #f16d7f;
 }
 
 .footer_box {

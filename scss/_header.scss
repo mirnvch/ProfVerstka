@@ -47,11 +47,6 @@ summary::after {
     margin-left: 10px;
 }
 
-// details[open] > summary::after {
-//     content: '\25BC';
-//     margin-left: 7px;
-// }
-
 .dropdown {
     margin-left: 37px;
     position: relative;
@@ -149,6 +144,7 @@ summary::after {
 .menu-list {
     display: flex;
     position: relative;
+    z-index: 99999;
 }
 
 
