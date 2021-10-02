@@ -37,9 +37,10 @@
         }
         &-input {
             width: 5px;
-            height: 37px;
+            height: 35px;
             appearance: none;
             position: absolute;
+            border-left: 5px solid #ef5b70;
         }
         &-input:checked ~ &-box {
             display: block;
