@@ -4,10 +4,14 @@
 
 .footer_info {
     height: 488px;
-    background: url(../img/Index/Footer_img.png) 0 0 no-repeat;
     background-size: 100%;
     position: relative;
     opacity: 1;
+    &-img {
+        position: relative;
+        opacity: 0.5;
+        width: 100%;
+    }
     
 }
 
@@ -23,8 +27,9 @@
 
 .footer_content {
     display: flex;
-    justify-content: space-around;
-    padding-top: 111px;
+    justify-content: space-between;
+    margin-top: -320px;
+    position: relative;
 }
 
 .footer_icon {
@@ -85,7 +90,7 @@
 }
 
 .right_footer_info {
-    padding-top: 37px;
+    padding: 37px 104px 0 0;
 }
 
 .footer_sub {

@@ -57,6 +57,7 @@ summary {
     }
 }
 
+
 .dropdown {
     margin-left: 37px;
     position: relative;
@@ -237,7 +238,12 @@ summary {
     height: 118px;
     background: url('../img/Index/Sylvester.png') 0 0 no-repeat;
     position: relative;
+    @keyframes blink {
+        from { opacity: 1; /* Непрозрачный текст */ }
+        to { opacity: 0.5; /* Прозрачный текст */ }
+    }
     &-text {
+        animation: blink 2s infinite;
         color: #ffffff;
         font-family: "Lato - Black";
         font-size: 22px;
