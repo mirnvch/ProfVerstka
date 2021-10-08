@@ -204,6 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 29px;
   background-size: contain;
   display: block;
+  cursor: pointer;
 }
 
 .right-btn__cart-box_menu-box {
