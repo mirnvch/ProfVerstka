@@ -2176,7 +2176,6 @@ form em {
 .footer_info-img {
   position: relative;
   opacity: 0.5;
-  width: 100%;
 }
 
 .footer_info::after {
