@@ -1,0 +1,173 @@
+.checkout {
+    padding-top: 89px;
+}
+
+.accord {
+    width: 100%;
+    &__item {
+        margin-bottom: 18px;
+        border-bottom: 1px solid #ebebeb; 
+        &_title {
+            display: block;
+            padding: 10px 15px;
+            position: relative;
+            color: #222222;
+            font-family: $ff;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        &_title:hover {
+            color: #f16d7f;
+        }
+        &_title:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            border: none;
+        }
+        &_input {
+            width: 5px;
+            height: 37px;
+            appearance: none;
+            position: absolute;
+        }
+        &_input:checked ~ &_box {
+            display: flex;
+            justify-content: space-around;
+            border: none;
+        }
+        &_box {
+            display: none;
+            color: #6f6e6e;
+            font-family: $ff;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 22px 12px;
+            &-content {
+                display: block;
+                color: #6f6e6e;
+                font-family: $ff;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
+                &-heading {
+                    color: #222222;
+                    font-family: $ff;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                &-text {
+                    color: #b3b2b2;
+                    font-family: $ff;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-bottom: 34px;
+                }
+                &-text.txt {
+                    margin-bottom: 15px;
+                }
+                &-text.txtLast {
+                    margin-bottom: 38px;
+                }
+                &-radio {
+                    display: flex;
+                }
+                &-radio label {
+                    color: #222222;
+                    font-family: $ff;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding-left: 12px;
+                }
+                &-radio.btn {
+                    margin-bottom: 20px;
+                }
+                &-radio.r-btn {
+                    margin-bottom: 33px;
+                }
+                &-btn {
+                    width: 180px;
+                    height: 50px;
+                    border: 1px solid #eaeaea;
+                    background-color: #ffffff;
+                    color: #4a4a4a;
+                    font-family: $ff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                &-btn:hover {
+                    background-color: #db4343;
+                    transition: all 0.8s;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+
+            }
+            &-field {
+                label {
+                    text-transform: uppercase;
+                    color: #222222;
+                    font-family: $ff;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                label.reqText {
+                    color: #ff0d0d;
+                    font-family: $ff;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-transform: none;
+                    margin-bottom: 32px;
+                }
+                &-btn {
+                    display: flex;
+                    margin-top: 16px;
+                    align-items: center;
+                    .txt {
+                        color: #222222;
+                        font-family: $ff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-left: 32px;
+                    }
+                    .txt:hover {
+                        color: #ff0d0d;
+                    }
+                }
+
+            }
+        }
+    }
+    &__item.end {
+        margin-bottom: 93px;
+        }
+}
+
+form em {
+    color: #ff0d0d;
+    font-family: $ff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#name {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0 22px 0;
+    padding-left: 10px;
+    cursor: text;
+    
+}
+

@@ -63,6 +63,11 @@
     &__card {
         display: flex;
         flex-direction: column;
+        & a:hover {
+            transform: translate(2px, 0px) scale(1.1);
+            transition: all 1s;
+            box-shadow: 0 0 4em 0.6em rgba(235, 97, 143, 1), 0 0 1em 0.2em rgba(255, 255, 255, 1);
+        }
     }
 
     &__title {
@@ -75,6 +80,7 @@
         &_1 {
             background: url('../img/Index/man.png') 0 0 no-repeat;
             height: 542px;
+            display: flex;
         }
         &_2 {
             background: url('../img/Index/ACCESORIES.png') 0 0 no-repeat;
@@ -193,6 +199,9 @@
 
 .item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    transform: translate(2px, 0px) scale(1.1);
+    transition: all 1s;
+    box-shadow: 0 0 4em 0.6em rgb(106, 68, 241), 0 0 1em 0.2em rgba(255, 255, 255, 1);
 }
 
 .item:hover .item-pic {
@@ -252,11 +261,35 @@
     text-align: center;
 }
 
+// ----Анимация кнопки -----
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
 .cont__btn:hover {
     background-color: #fff;
     color: #f16d7f;
     font-weight: 600;
-    border: 1px solid #e6e6e6
+    border: 1px solid #e6e6e6;
+    transform: translate(1px, 1px) scale(1.1);
+    transition: all 0.4s;
+    box-shadow: 0 0 4em 0.6em rgb(48, 118, 197), 0 0 1em 0.2em rgba(255, 255, 255, 1);
+    animation: bounce 1s;
+    
 }
 
 .container-promo {
@@ -266,6 +299,7 @@
     background-image: url(../img/Index/promoimg.png);
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom: 97px;
 
 }
 

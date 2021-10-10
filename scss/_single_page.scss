@@ -80,6 +80,29 @@ ul.breadcrumb li:last-of-type {
     border: 1px solid #eaeaea;
     background-color: #f7f7f7;
 }
+.left-arrow {
+    height: 44px;
+    width: 44px;
+    background: url(../img/Single_page/Arrow.jpg) no-repeat;
+    position: absolute;
+    margin-top: -25%;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: inset 0 0 0.5em 0 #61cbeb, 0 0 0.5em 0 #53a8cf;
+    }     
+}
+.right-arrow {
+    height: 44px;
+    width: 44px;
+    background: url(../img/Single_page/Arrow_copy.jpg) no-repeat;
+    position: absolute;
+    margin-top: -25%;
+    right: 0;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: inset 0 0 0.5em 0 #61cbeb, 0 0 0.5em 0 #53a8cf;
+    }   
+}
 
 .single-info {
     height: 730px;
