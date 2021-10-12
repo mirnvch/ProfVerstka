@@ -644,8 +644,6 @@ h1, h2, h3, h4, h5, h6 {
           transform: translate(2px, 0px) scale(1.1);
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-box-shadow: 0 0 4em 0.6em #eb618f, 0 0 1em 0.2em white;
-          box-shadow: 0 0 4em 0.6em #eb618f, 0 0 1em 0.2em white;
 }
 
 .content__title {
@@ -804,8 +802,6 @@ h1, h2, h3, h4, h5, h6 {
           transform: translate(2px, 0px) scale(1.1);
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-box-shadow: 0 0 4em 0.6em #6a44f1, 0 0 1em 0.2em white;
-          box-shadow: 0 0 4em 0.6em #6a44f1, 0 0 1em 0.2em white;
 }
 
 .item:hover .item-pic {
@@ -879,55 +875,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-@-webkit-keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-}
-
 .cont__btn:hover {
   background-color: #fff;
   color: #f16d7f;
   font-weight: 600;
-  border: 1px solid #e6e6e6;
   -webkit-transform: translate(1px, 1px) scale(1.1);
           transform: translate(1px, 1px) scale(1.1);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  -webkit-box-shadow: 0 0 4em 0.6em #3076c5, 0 0 1em 0.2em white;
-          box-shadow: 0 0 4em 0.6em #3076c5, 0 0 1em 0.2em white;
-  -webkit-animation: bounce 1s;
-          animation: bounce 1s;
+  border: 1px solid #f16d7f;
 }
 
 .container-promo {
@@ -1910,9 +1866,7 @@ form em {
 }
 
 .cart-details__btn button:hover {
-  border: 3px solid #00aced;
-  -webkit-box-shadow: 0px 0px 25px #00aced;
-          box-shadow: 0px 0px 25px #00aced;
+  border: 1px solid #f16d7f;
   color: #f16d7f;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2019,6 +1973,7 @@ form em {
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .cart-details__cont_info input {
@@ -2032,6 +1987,7 @@ form em {
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 300;
+  cursor: text;
 }
 
 .cart-details__cont_info button {
@@ -2047,9 +2003,7 @@ form em {
 }
 
 .cart-details__cont_info button:hover {
-  border: 3px solid #00aced;
-  -webkit-box-shadow: 0px 0px 25px #00aced;
-          box-shadow: 0px 0px 25px #00aced;
+  border: 1px solid #f16d7f;
   color: #f16d7f;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2167,15 +2121,18 @@ form em {
 }
 
 .footer_info {
-  height: 488px;
-  background-size: 100%;
+  min-height: 488px;
   position: relative;
-  opacity: 1;
+  background: url(../img/Index/Footer_img.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer_info-img {
   position: relative;
   opacity: 0.5;
+  min-width: 100%;
 }
 
 .footer_info::after {
@@ -2195,8 +2152,8 @@ form em {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -320px;
   position: relative;
+  padding-top: 10%;
 }
 
 .footer_icon {
@@ -2300,6 +2257,7 @@ form em {
   padding-left: 28px;
   margin-top: 30px;
   position: relative;
+  cursor: text;
 }
 
 .footer_btn {
@@ -2313,10 +2271,6 @@ form em {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
-}
-
-.footer_btn:hover:before {
-  height: 46px;
 }
 
 .footer_btn:hover {
