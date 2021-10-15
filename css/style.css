@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
+  min-height: 100px;
   background-color: #ffffff;
   border: 1px solid #ececec;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
@@ -976,6 +976,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: normal;
   line-height: 24px;
   text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    padding: 0 5% 0 5%;
+  }
+  .sub__header__img {
+    background-position-x: 80%;
+  }
+  .content__title {
+    background-size: cover;
+  }
+  .card__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .single-content {

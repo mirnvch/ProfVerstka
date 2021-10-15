@@ -356,3 +356,18 @@
     line-height: 24px;
     text-align: left;
 }
+
+@media (max-width: 1024px) {
+    .menu {
+        padding: 0 5% 0 5%;
+    }
+    .sub__header__img {
+        background-position-x: 80%;
+    }
+    .content__title {
+        background-size: cover;
+    }
+    .card__box {
+        flex-wrap: wrap;
+    }
+}
