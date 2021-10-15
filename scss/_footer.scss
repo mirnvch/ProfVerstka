@@ -3,10 +3,12 @@
 }
 
 .footer_info {
-    height: 488px;
-    background-size: 100%;
+    min-height: 488px;
     position: relative;
-    opacity: 1;
+    background: url(../img/Index/Footer_img.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     &-img {
         position: relative;
         opacity: 0.5;
@@ -28,8 +30,9 @@
 .footer_content {
     display: flex;
     justify-content: space-between;
-    margin-top: -320px;
     position: relative;
+    padding-top: 10%;
+
 }
 
 .footer_icon {
@@ -128,6 +131,7 @@
     padding-left: 28px;
     margin-top: 30px;
     position: relative;
+    cursor: text;
 }
 
 .footer_btn {
@@ -141,9 +145,6 @@
     font-family: $ff;
     font-size: 14px;
     font-weight: 400;
-    &:hover:before {
-        height: 46px;
-    }
     &:hover {
         color: #f16d7f;
         background: #ffffff;
