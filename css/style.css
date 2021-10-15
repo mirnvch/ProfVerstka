@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header {
@@ -987,10 +988,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .content__title {
     background-size: cover;
-  }
-  .card__box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
